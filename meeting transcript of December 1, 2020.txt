@@ -1,0 +1,41 @@
+ESCARESES: Yung IPO ipapasa sa github
+GONZALES: May kakilala ba kayo sa ICT at entrep?
+ABEJERO: Bakit?
+GONZALES: Wala pa ata sa code
+ABEJERO: Sa IT pati sa entrep may kakilala ako, ako na manghihingi
+GONZALES: Naupload mo na ba Rodel?
+ESCARESES: Di ko inuupload, upload ko na ba?
+GONZALES: Wait
+ABEJERO: May invitation ba sa github? Painvite naman ako kung meron
+ESCARESES: Wait, ano email gamit nyo sa github?
+ABEJERO: Eto debabejero@donbosco.edu.ph
+GONZALES: gonzalesangelo791@gmail.com
+ABEJERO: San makikita invites?
+ESCARESES: Check nyo email nyo mismo, magnonotif naman ata yun don eh. Upload ko na IPO?
+GONZALES: Sige 
+ESCARESES: Ano file format? kung .md or .txt
+GONZALES: .txt lang. ano daw ung meron dun sa transcript nung mga meeting ba un?
+ESCARESES: Yung usual na ginagawa ng transcript, parang ung flow ng discussion natin ngayon tas sa github iuupload
+GONZALES: Pati ba nung una nating discussion?
+ESCARESES: Di ko sure kung kasama yung una, sabi lang kasi ngayon eh
+GONZALES: Sige sige
+ESCARESES: Angelo ikaw na magrecord
+GONZALES: g lang
+ABEJERO: Tapos ano pala, nahingi ko na rin ung sched ng IT, tas ginagawa ko na. Yung sa entrep di pa sumasagot. Pa wait na lang.
+GONZALES: Inedit ko rin ung code, upload ko nalang pagtapos ko tas dun nlng input ung sayo Donn
+ABEJERO: Sige sige wait ko nalang rin
+ESCARESES: Pano to?(referring to the revision of IPO)Parang table lang daw tapos ung process is function
+GONZALES: Ung chart lng ata tinutukoy dun na katulad, bali ung ginawa na ata ni Donn
+ESCARESES: I see, kaso baguhin daw natin process natin
+GONZALES: Edit natin, pero may transcript na ba? 
+ABEJERO: Wala pa atang transcript
+GONZALES: Sa github din ba uupload?
+ESCARESES: Oo 
+GONZALES: Base dun sa process ng de3 ung atin 
+	-get Yes/No answer
+	-get course
+	-display course details
+ausin nalang ung phrasing
+
+
+
