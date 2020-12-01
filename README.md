@@ -9,7 +9,6 @@ The program will display:
 * the schedules,
 * the professor for each course,
 * and the units for each course.
-* The program will also allow users to modify and delete existing courses.
 
 ## MEMBERS:
 * Jan Rodel Escareses (Team Lead),
