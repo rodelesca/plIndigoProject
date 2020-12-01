@@ -1,0 +1,14 @@
+Indigo Team Transcript 12/01/2020
+Discussions:
+Github adjustments (README.md, IPO)
+information gathering (IT/Entrep course information)
+code modification
+fixing IPO issues
+
+Problems encountered:
+Incorrect process tree in IPO Model
+IPO format
+
+Solutions:
+Changed process tree in IPO Model
+fixed IPO to become a table
