@@ -1,0 +1,23 @@
+# Input:
+- YES/NO answer for the question "Would you like to view your course information?"
+
+- Answer to "What is your course?" 
+
+- YES/NO answer for the question "Would you like to view another course's details?"
+
+# Process:
+
+-  Initially on standby, asks whether a student would like to view his/her course details
+
+- Prompts the available courses then ask what is the user's course
+
+- Ask once more if the user would like to view another course's details 
+
+# Output:
+
+- Displays course details
+Courses(subjects)
+Units per subject
+Professors/Instructors
+Schedule(time in and time out for each day of the week)
+Meeting room((i.e. Room no., Computer Laboratory, Chemistry Laboratory, etc.)
