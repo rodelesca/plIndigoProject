@@ -1,0 +1,51 @@
+GONZALES: Eto yung updated file Donn
+ESCARESES: Yung sa ipo lang narinig ko, mas maganda daw na markdown yung format para malinis tignan
+ESCARESES: Pero ano daw kailangan gawin ngayon?
+GONZALES: Fix documentation, IPO ung markdown format ata?, may sinabi din dun sa flowchart bawat process daw tas improve code lng
+ABEJERO: Tapusin lang raw yung IPO pati Flowchart
+GONZALES: Dec 8 daw ung viewing
+GONZALES: Di na kaya nung lucid chart ung elif natin. Need na upgrade acc.
+ESCARESES: Inaayos ko na nga pala yung ipo ulit
+GONZALES: Inaayos ko na din ung flowchart natin 
+ESCARESES: Oks na ata yung IPO, pa double check nalang
+ABEJERO: Naayos ko na rin yung sa ICT pati Entrep
+GONZALES: Nga pala Donn, tapos mo na ba lagay ung ict?
+ABEJERO: Ito na, tapos na pati yung sa entrep
+ABEJERO: Rodel, san mo ginawa yung IPO mo?
+ESCARESES: Sa github man, kaso .txt format lang, hindi .md
+ABEJERO: Ahhh sige sige
+ESCARESES: Iimplement pa ba natin yung napapalitan yung course details Angelo?
+ABEJERO: Alisin ko naba tong lumang transcript? tas gawa ako ulet bago
+ESCARESES: Transcript for tuesday yun, gawa kanalang new transcript for today
+ABEJERO: Sige sige
+GONZALES: Ano file name ng png ng flowchart?
+ESCARESES: IndigoProjFlowchart nalang siguro
+GONZALES: Sige yun nalang
+GONZALES: Pasight nlng ng flowcahrt kkng may need baguhin sa wording ko or phrasing hahah limot ko na
+ESCARESES: Goods na wording nyan
+ABEJERO: Okay yan
+GONZALES: Padagdag nlng ung iba tols sa IPO
+ABEJERO: Upload ko nalang sa github yung transcript natin pag tapos ko na
+GONZALES: Naupload ko na flowchart tols pacheck nlng
+GONZALES: Nga pala ung kulang nlng ata or need improve sa code is d2 sa part na 2, though sobrang guided na nung user sa mga instructions
+ESCARESES: Pasend nga nung updated na code, yung nadagdag na lahat 
+GONZALES: Nasend ko na dito yung updated code
+ESCARESES: Ty ty!
+ESCARESES: Lagyan mo nalang ng naayos ko na tols, lagyan mo lang ng error message yung if use == NO
+GONZALES: Dba sa else dapat ung error message kng sakali? kasi pag NO sagot nila break dapat?
+ESCARESES: Yup sa else yung error message. 
+ESCARESES: Eto inupdate ko. Yung error message na nilagay ko invalid input lang ah
+GONZALES: Oks oks, tty ty
+ESCARESES: Okay na IPO natin
+GONZALES: Goods na rin flowchart 
+ABEJERO: Sige pasa ko na yung transcript natin
+GONZALES: Ggg tol
+ESCARESES: Sige sige
+
+
+
+
+
+
+
+
