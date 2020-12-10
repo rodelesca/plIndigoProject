@@ -64,7 +64,7 @@ BSEntrep = {
 }
 BSArchi = {
     "1": ["ARD1", "2.0", "Chua", "9:30AM - 11:30AM, Mon and Thu", "N/A"],
-    "2": ["PR1", "3.0", "TORRES", "12:00PM - 1:30PM, Mon and Thu", "N/A"],
+    "2": ["PR1", "3.0", "Torres", "12:00PM - 1:30PM, Mon and Thu", "N/A"],
     "3": ["TOA1", "2.0", "Ledda", "7:30AM - 11:30AM, Wed", "N/A"],
     "4": ["CL1A", "3.0", "Mendoza", "4:00PM - 5:30PM, Mon and Thu", "N/A"],
     "5": ["VT1", "2.0", "Yap", "7:30PM - 10:30PM, Wed", "N/A"],
