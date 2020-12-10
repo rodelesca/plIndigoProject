@@ -80,7 +80,8 @@ def course_information(user):
             dbtc_courses = ["Computer Engineering", "Electronics and Communication Engineering", "Mechanical Engineering",
                         "Computer Science", "Information and Computer Technology", "Entrepreneurship", "Architecture"]
             print("The available courses for the school year 2020-2021, 1st semester are the following:")
-            print(dbtc_courses)
+            for i in dbtc_courses:
+                print('\t',i)
             student_program = (input("What is your course? \n")).upper()
             print()
             if student_program == "COMPUTER ENGINEERING":
@@ -95,8 +96,6 @@ def course_information(user):
                 if use == "NO":
                     print("Thank you and have a great day!")
                     break
-                else:
-                    print('Invalid Input! Please try again.')
             elif student_program == "ELECTRONICS AND COMMUNICATION ENGINEERING":
                 print("{:10}{:10}{:15}{:35}{:15}".format("Courses", "Units", "Professor", "Schedule", "Room"))
                 for key, value in BSECE.items():
@@ -109,8 +108,6 @@ def course_information(user):
                 if use == "NO":
                     print("Thank you and have a great day!")
                     break
-                else:
-                    print('Invalid Input! Please try again.')
             elif student_program == "MECHANICAL ENGINEERING":
                 print("{:10}{:10}{:15}{:35}{:15}".format("Courses", "Units", "Professor", "Schedule", "Room"))
                 for key, value in BSME.items():
@@ -123,8 +120,6 @@ def course_information(user):
                 if use == "NO":
                     print("Thank you and have a great day!")
                     break
-                else:
-                    print('Invalid Input! Please try again.')
             elif student_program == "COMPUTER SCIENCE":
                 print("{:10}{:10}{:15}{:35}{:15}".format("Courses", "Units", "Professor", "Schedule", "Room"))
                 for key, value in BSCS.items():
@@ -137,8 +132,6 @@ def course_information(user):
                 if use == "NO":
                     print("Thank you and have a great day!")
                     break
-                else:
-                    print('Invalid Input! Please try again.')
             elif student_program == "INFORMATION AND COMPUTER TECHNOLOGY":
                 print("{:10}{:10}{:15}{:35}{:15}".format("Courses", "Units", "Professor", "Schedule", "Room"))
                 for key, value in BSICT.items():
@@ -151,8 +144,6 @@ def course_information(user):
                 if use == "NO":
                     print("Thank you and have a great day!")
                     break
-                else:
-                    print('Invalid Input! Please try again.')
             elif student_program == "ENTREPRENEUR":
                 print("{:10}{:10}{:15}{:35}{:15}".format("Courses", "Units", "Professor", "Schedule", "Room"))
                 for key, value in BSEntrep.items():
@@ -165,8 +156,6 @@ def course_information(user):
                 if use == "NO":
                     print("Thank you and have a great day!")
                     break
-                else:
-                    print('Invalid Input! Please try again.')
             elif student_program == "ARCHITECTURE":
                 print("{:10}{:10}{:15}{:35}{:15}".format("Courses", "Units", "Professor", "Schedule", "Room"))
                 for key, value in BSArchi.items():
@@ -179,13 +168,12 @@ def course_information(user):
                 if use == "NO":
                     print("Thank you and have a great day!")
                     break
-                else:
-                    print('Invalid Input! Please try again.')
             elif student_program == "EXIT":
                 print("Thank you and have a great day!")
                 break
             else:
-                print("Invalid input. Please try again. If you wish to end the program type 'EXIT'")
+                print("Invalid input. Please mind your spelling and spacing, then try again. \n"
+                      "If you wish to end the program type 'EXIT'")
         elif user == "NO":
             print("Thank you and have a great day!")
             break
