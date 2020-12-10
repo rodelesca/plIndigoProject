@@ -10,7 +10,7 @@ The program will display:
 * the professor for each course,
 * and the units for each course.
 
-## MEMBERS:
+## TEAM MEMBERS:
 * Jan Rodel Escareses (Team Lead),
 * Angelo Gonzales (Rapporteur),
 * Donn Abejero
