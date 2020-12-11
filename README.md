@@ -12,5 +12,5 @@ The program will display:
 
 ## TEAM MEMBERS:
 * Jan Rodel Escareses (Team Lead),
-* Angelo Gonzales (Rapporteur),
-* Donn Abejero
+* Angelo Lloyd Gonzales (Rapporteur),
+* Donn Enrico Abejero
