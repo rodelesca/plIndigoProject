@@ -9,7 +9,7 @@ BSCpE = {
     "8": ["DIFCALC", "3.0", "Soriano", "4:30PM - 6:00PM, Tue and Fri", "N/A"],
     "9": ["NSTP1", "3.0", "Averilla", "1:30PM - 3:00PM, Tue and Fri", "N/A"],
     "10": ["PED1", "2.0", "Bienvenido", "3:00PM - 4:00PM, Tue and Fri", "N/A"]
-}
+}  # Creates a dictionary named BSCpE
 BSECE = {
     "1": ["BES112", "1.0", "De Los Reyes", "7:30AM - 10:30AM, Wed", "N/A"],
     "2": ["BES241", "2.0", "Ruiz", "7:30AM - 10:30AM, Tue and Fri", "N/A"],
@@ -21,7 +21,7 @@ BSECE = {
     "8": ["PED1", "2.0", "Bienvenido", "3:00PM - 4:00PM, Tue and Fri", "N/A"],
     "9": ["PRBSTAT", "3.0", "Soriano", "3:00PM - 4:30PM, Mon and Thu", "N/A"],
     "10": ["TECH", "3.0", "Gonzales", "12:00PM - 1:30PM, Mon and Thu", "N/A"]
-}
+}  # Creates a dictionary named BSECE
 BSME = {
     "1": ["ARTS", "3.0", "Torres", "1:30PM - 3:00PM, Mon and Thu", "N/A"],
     "2": ["SHOPRAC", "1.0", "Delos Reyes", "8:00AM - 11:00AM, Tue", "N/A"],
@@ -33,7 +33,7 @@ BSME = {
     "8": ["DIFCALC", "3.0", "Soriano", "4:00PM - 6:00PM, Tue and Fri", "N/A"],
     "9": ["NSTP1", "3.0", "Averilla", "1:30PM - 3:00PM, Tue and Fri", "N/A"],
     "10": ["PED1", "2.0", "Bienvenido", "4:00PM - 5:00PM, Tue and Fri", "N/A"]
-}
+}  # Creates a dictionary named BSME
 BSCS = {
     "1": ["ARTS", "3.0", "Torres", "1:30PM - 3:00PM, Mon and Thu", "N/A"],
     "2": ["ITE101", "3.0", "Barcenas", "7:30AM - 10:30AM, Tue", "N/A"],
@@ -43,7 +43,7 @@ BSCS = {
     "6": ["NSTP1", "3.0", "Averilla", "1:30PM - 3:00PM, Fri", "N/A"],
     "7": ["PED1", "2.0", "Bienvenido", "3:00PM - 4:00PM, Tue and Fri", "N/A"],
     "8": ["TECH", "3.0", "Dela Cruz", "12:00PM - 1:30PM, Mon and Thu", "N/A"]
-}
+}  # Creates a dictionary named BSCS
 BSICT = {
     "1": ["TECH", "3.0", "Dela Cruz", "12:00PM - 1:30PM, Mon and Thu", "N/A"],
     "2": ["CL1A", "3.0", "Mendoza", "4:00PM - 5:30PM, Mon and Thu", "N/A"],
@@ -52,7 +52,7 @@ BSICT = {
     "5": ["ITE102", "3.0", "Dala-Ocenar", "9:00AM - 12:00PM, Mon and Thu", "N/A"],
     "6": ["NSTP1", "3.0", "Averilla", "1:30PM - 3:00PM, Tue and Fri", "N/A"],
     "7": ["PED1", "2.0", "Bienvenido", "3:00PM - 4:00PM, Tue and Fri", "N/A"]
-}
+}  # Creates a dictionary named BSICT
 BSEntrep = {
     "1": ["MGMNT1", "3.0", "Mendoza", "12:00PM - 1:30PM, Mon and Thu", "N/A"],
     "2": ["ENTRE1", "3.0", "Mendoza", "9:00AM - 10:30AM, Mon and Thu", "N/A"],
@@ -61,7 +61,7 @@ BSEntrep = {
     "5": ["ACCTG1", "3.0", "Macapagal", "10:30AM - 12:00PM, Tue and Fri", "N/A"],
     "6": ["NSTP1", "3.0", "Averilla", "1:30PM - 3:00PM, Tue and Fri", "N/A"],
     "7": ["PED1", "2.0", "Bienvenido", "4:00PM - 5:30PM, Tue and Fri", "N/A"]
-}
+}  # Creates a dictionary named BSEntrep
 BSArchi = {
     "1": ["ARD1", "2.0", "Chua", "9:30AM - 11:30AM, Mon and Thu", "N/A"],
     "2": ["PR1", "3.0", "Torres", "12:00PM - 1:30PM, Mon and Thu", "N/A"],
@@ -72,7 +72,7 @@ BSArchi = {
     "7": ["GR1", "3.0", "Serviño", "7:30AM - 11:00AM, Tue and Fri", "N/A"],
     "8": ["NSTP1", "3.0", "Averilla", "1:30PM - 3:00PM, Tue and Fri", "N/A"],
     "9": ["PED1", "2.0", "Bienvenido", "4:00PM - 5:00PM, Tue and Fri", "N/A"]
-}
+}  # Creates a dictionary named BSArchi
 print("Good day esteemed student of Don Bosco Technical College!")
 def course_information(user):
     while True:
@@ -88,7 +88,7 @@ def course_information(user):
                 print("{:10}{:10}{:15}{:35}{:15}".format("Courses", "Units", "Professor", "Schedule", "Room"))
                 for key, value in BSCpE.items():
                     course, units, professor, schedule, room = value
-                    print("{:10}{:10}{:15}{:35}{:15}".format(course, units, professor, schedule, room))
+                    print("{:10}{:10}{:15}{:35}{:15}".format(course, units, professor, schedule, room))  # Prints the course information from dictionary BSCpE.
                 print()
                 use = input("Would you like to view another course's details? \n"
                             "Type 'YES' to view another course's details and 'NO' to exit program. \n").upper()
@@ -100,7 +100,7 @@ def course_information(user):
                 print("{:10}{:10}{:15}{:35}{:15}".format("Courses", "Units", "Professor", "Schedule", "Room"))
                 for key, value in BSECE.items():
                     course, units, professor, schedule, room = value
-                    print("{:10}{:10}{:15}{:35}{:15}".format(course, units, professor, schedule, room))
+                    print("{:10}{:10}{:15}{:35}{:15}".format(course, units, professor, schedule, room))  # Prints the course information from dictionary BSECE.
                 print()
                 use = input("Would you like to view another course's details? \n"
                             "Type 'YES' to view another course's details and 'NO' to exit program. \n").upper()
@@ -112,7 +112,7 @@ def course_information(user):
                 print("{:10}{:10}{:15}{:35}{:15}".format("Courses", "Units", "Professor", "Schedule", "Room"))
                 for key, value in BSME.items():
                     course, units, professor, schedule, room = value
-                    print("{:10}{:10}{:15}{:35}{:15}".format(course, units, professor, schedule, room))
+                    print("{:10}{:10}{:15}{:35}{:15}".format(course, units, professor, schedule, room))  # Prints the course information from dictionary BSME.
                 print()
                 use = input("Would you like to view another course's details? \n"
                             "Type 'YES' to view another course's details and 'NO' to exit program. \n").upper()
@@ -124,7 +124,7 @@ def course_information(user):
                 print("{:10}{:10}{:15}{:35}{:15}".format("Courses", "Units", "Professor", "Schedule", "Room"))
                 for key, value in BSCS.items():
                     course, units, professor, schedule, room = value
-                    print("{:10}{:10}{:15}{:35}{:15}".format(course, units, professor, schedule, room))
+                    print("{:10}{:10}{:15}{:35}{:15}".format(course, units, professor, schedule, room))  # Prints the course information from dictionary BSCS.
                 print()
                 use = input("Would you like to view another course's details? \n"
                             "Type 'YES' to view another course's details and 'NO' to exit program. \n").upper()
@@ -136,7 +136,7 @@ def course_information(user):
                 print("{:10}{:10}{:15}{:35}{:15}".format("Courses", "Units", "Professor", "Schedule", "Room"))
                 for key, value in BSICT.items():
                     course, units, professor, schedule, room = value
-                    print("{:10}{:10}{:15}{:35}{:15}".format(course, units, professor, schedule, room))
+                    print("{:10}{:10}{:15}{:35}{:15}".format(course, units, professor, schedule, room))  # Prints the course information from dictionary BSICT.
                 print()
                 use = input("Would you like to view another course's details? \n"
                             "Type 'YES' to view another course's details and 'NO' to exit program. \n").upper()
@@ -148,7 +148,7 @@ def course_information(user):
                 print("{:10}{:10}{:15}{:35}{:15}".format("Courses", "Units", "Professor", "Schedule", "Room"))
                 for key, value in BSEntrep.items():
                     course, units, professor, schedule, room = value
-                    print("{:10}{:10}{:15}{:35}{:15}".format(course, units, professor, schedule, room))
+                    print("{:10}{:10}{:15}{:35}{:15}".format(course, units, professor, schedule, room))  # Prints the course information from dictionary BSEntrep.
                 print()
                 use = input("Would you like to view another course's details? \n"
                             "Type 'YES' to view another course's details and 'NO' to exit program. \n").upper()
@@ -160,7 +160,7 @@ def course_information(user):
                 print("{:10}{:10}{:15}{:35}{:15}".format("Courses", "Units", "Professor", "Schedule", "Room"))
                 for key, value in BSArchi.items():
                     course, units, professor, schedule, room = value
-                    print("{:10}{:10}{:15}{:35}{:15}".format(course, units, professor, schedule, room))
+                    print("{:10}{:10}{:15}{:35}{:15}".format(course, units, professor, schedule, room))  # Prints the course information from dictionary BSArchi.
                 print()
                 use = input("Would you like to view another course's details? \n"
                             "Type 'YES' to view another course's details and 'NO' to exit program. \n").upper()
@@ -183,4 +183,4 @@ def course_information(user):
             user = input().upper()
             print()
 course_information(input("Would you like to view your course information?""\n"
-                         "Type 'YES' to view course details and 'NO' to exit program""\n").upper())
+                         "Type 'YES' to view course details and 'NO' to exit program""\n").upper())  # Prompts the user to input for the program to proceed.
