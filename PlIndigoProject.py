@@ -1,3 +1,13 @@
+# Team Indigo               BES241
+# Jan Rodel Escareses       
+# Donn Enrico Abejero
+# Angelo Lloyd Gonzales
+# Lab Project               December 15, 2020
+# "We certify that we have worked on this activity and completed it on our own
+# and that we have neither copied the work of another nor have we concealed any
+# violation of the Honor Code. We will receive a grade of 5.0 (FAIL) for the course
+# and be subject to disciplinary action if we fail to honor this code."
+
 BSCpE = {
     "1": ["ARTS", "3.0", "Torres", "1:30PM - 3:00PM, Mon and Thu", "N/A"],
     "2": ["BES241", "2.0", "Ruiz", "7:30AM - 10:30AM, Tue and Fri", "N/A"],
