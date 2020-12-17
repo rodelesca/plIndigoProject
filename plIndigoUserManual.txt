@@ -1,0 +1,105 @@
+Thank you for installing the DBTC course manager
+
+Once the program is launched, it will run continuously until it is terminated through the selections.
+
+1.) STARTUP
+    you will be given a selection of the following operations:
+	> To view the course details
+	> To edit the course details
+	> To terminate the program
+
+2.) The program would then prompt you to key in which of the given you would like to perform.
+
+	2.1) VIEWING OPERATION
+		2.1.1) A list of all available courses of DBTC will be displayed.
+		2.1.2) You will be asked to input which among the given courses' details you would like to view.
+			- if you keyed in an invalid input, 
+				2.1.2.1) The program will display a message notifying the user of an invalid input
+				2.1.2.2) You will automatically be redirected to the main selection and proceed with "STARTUP".
+		2.1.3) After selecting a course, the program will display all of the course's details.
+		2.1.4) After you have viewed the course's details, the program will display a new selection which include the following:
+			> Continue viewing course details
+			> redirect to the editing selection to edit course details
+			> Terminate the program
+		2.1.5) The program would then ask for the input of your selection.
+			- if you choose to continue viewing, you will proceed to "VIEWING OPERATION".
+			- if you choose to edit, you will be redirected to the editing selection and proceed to "EDITING OPERATION".
+			- if you choose to terminate, the program will exit.
+			- if you keyed in an invalid input,
+				2.1.5.1) The program will display a message notifying the user of an invalid input
+				2.1.5.2) You will automatically be redirected to the main selection and proceed with "STARTUP".
+
+	2.2) EDITING OPERATION
+		2.2.1) A list of all available courses of DBTC will be displayed.
+		2.2.2) You will be asked to input which among the given courses' details you would like to edit.
+			- If you keyed in an invalid input,
+				2.2.2.1) The program will display a message notifying the user of an invalid input.
+				2.2.2.2) You will automatically be redirected to the main selection and proceed with "STARTUP".
+		2.2.3) After selecting a course, the program will display a selection of all editing commands available which include the following:
+			> To add a new course(subject)
+			> To remove an existing course(subject)
+			> To edit a course's details(subject's details) by keying in the specific course code, hence, a list of all courses(subjects) will be displayed.
+		2.2.4) The program would then ask for the input of your selection.
+			- if you choose to add a new course(subject), you will be asked to input the following(all the while following the given format):
+				2.2.4.1.1) input for course's code.
+				2.2.4.1.2) input for course's number of units.
+				2.2.4.1.3) input for course's professor/instructor.
+				2.2.4.1.4) input for course's schedule(time in & out for each day of the week).
+				2.2.4.1.5) input for course's room details.
+				2.2.4.1.6) The updated course details will be displayed to show the changes.
+			- if you choose to remove an existing course(subject),
+				2.2.4.2.1) A list of all existing courses(subjects) will be displayed.
+				2.2.4.2.2) You will be prompted to input which among the list of courses(subjects) you would like to remove.
+				2.2.4.2.3) The selected course will be removed.
+				2.2.4.2.4) The updated course details will be displayed to show the changes.
+			- if you choose to edit a specific course's(subject's) details by keying in a specific course(subject), 
+				2.2.4.3.1)  The program will display a selection of all editing commands available for the course(subject) which include the following:
+						> To change/update the course's code.
+						> To change/update the course's number units.
+						> To change/update the course's professor/instructor.
+						> To change/update the course's schedule(time in and out for each day of the week).
+						> To change/update the course's room details.
+						> To exit to the main selection.
+				2.2.4.3.3) The program would then ask for the input of your selection
+						- if you choose to change/update the course code,
+							2.2.4.3.3.1) You will be asked to input the new course code.
+							2.2.4.3.3.2) The program will change/update the course code.
+							2.2.4.3.3.3) The updated course details will be displayed to show the changes.
+						- if you choose to change/update the course's number of units,
+							2.2.4.3.3.1) You will be asked to input the new number of units.
+							2.2.4.3.3.2) The program will change/update the number of units.
+							2.2.4.3.3.3) The updated course details will be displayed to show the changes.
+						- if you choose to change/update the course's professor/instructor,
+							2.2.4.3.3.1) You will be asked to input the new professor/instructor.
+							2.2.4.3.3.2) The program will change/update the professor/instructor.
+							2.2.4.3.3.3) The updated course details will be displayed to show the changes.
+						- if you choose to change/update the course's schedule,
+							2.2.4.3.3.1) You will be asked to input the new schedule.
+							2.2.4.3.3.2) The program will change/update the schedule.
+							2.2.4.3.3.3) The updated course details will be displayed to show the changes.
+						- if you choose to change/update the course's room details,
+							2.2.4.3.3.1) You will be asked to input the new room details.
+							2.2.4.3.3.2) The program will change/update the room details.
+							2.2.4.3.3.3) The updated course details will be displayed to show the changes.
+						- if you keyed in an invalid input,
+							2.2.4.4.1) The program will display a message notifying the user of an invalid input
+							2.2.4.4.2) An additional selection will be displayed, which is to exit to the main selection
+							2.2.4.4.3) You will have a retry and proceed to "EDITING OPERATION", specifically operations from "2.2.3" onwards.
+									- if you choose to exit, you will automatically be redirected to the main selection and proceed with "STARTUP".
+			- if you keyed in an invalid input, 
+				2.2.4.4.1) The program will display a message notifying the user of an invalid input
+				2.2.4.4.2) An additional selection will be displayed, which is to exit to the main selection
+				2.2.4.4.3) You will have a retry and proceed to "EDITING OPERATION", specifically operations from "2.2.3" onwards.
+						- if you choose to exit, you will automatically be redirected to the main selection and proceed with "STARTUP".
+
+	2.3) TERMINATION
+		2.3.1) The program will display a message notifying the user of program termination
+		2.3.2) The program will exit.
+
+	2.4) INVALID INPUT
+		2.4.1) The program will display a message notifying the user of an invalid input
+		2.4.2) You will have a retry and proceed to "STARTUP". 
+
+Ultimately, that elaborates on how you can use the DBTC course manager. HAPPY HOLIDAYS!!!
+
+
