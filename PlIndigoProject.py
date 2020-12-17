@@ -92,29 +92,30 @@ dbtc_courses = ["Computer Engineering",
                 "Entrepreneurship",
                 "Architecture"]
 
-def view_course(program):
+def view_course(program): # execute when the user wants to view the course details
     print("{:10}{:10}{:15}{:35}{:15}".format("Courses", "Units", "Professor", "Schedule", "Room"))
-    for key, value in program.items():
+    for key, value in program.items(): # assigns the items in the list for a more organized and aesthetic display
         course, units, professor, schedule, room = value
         print("{:10}{:10}{:15}{:35}{:15}".format(course, units, professor, schedule, room))
-        # Prints the course information from dictionary BSCpE.
+        # prints the course information from dictionary BSCpE.
 
-def edit_course(college_course):
+def edit_course(college_course): # execute when the user wants to edit the course details
     print("Type 'ADD' to add a course(subject)\n"
           "Type 'REMOVE' to remove a course(subject)\n"
           "Type the course code to edit specific course details")
+    # user friendly instructions on possible operations
     print("The following are the current course codes of Computer Engineering:")
-    for i in college_course.keys():
+    for i in college_course.keys(): # prints all courses(subjects) of the course
         print('\t', i)
     subjedit = str(input("What would you like to do?\n").upper())
-    if subjedit in college_course:
+    if subjedit in college_course: # will execute when the input is an item of the dictionary
         print("Type 1 to edit the course code\n"
               "Type 2 to edit the course unit\n"
               "Type 3 to edit the instructor\n"
               "Type 4 to edit the schedule\n"
               "Type 5 to edit the room number")
-        courseedit = int(input("what would you like to edit?\n"))
-        if courseedit == 1:
+        courseedit = input("what would you like to edit?\n").upper()
+        if courseedit == "1": # edit the course code(first item of the list)
             newcourse = str(input("please input the new course code for this course.\n")).upper()
             college_course[subjedit][0] = newcourse
             print('Successfully edited course. The following is the updated course details')
@@ -122,8 +123,14 @@ def edit_course(college_course):
             for key, value in college_course.items():
                 course, units, professor, schedule, room = value
                 print("{:10}{:10}{:15}{:35}{:15}".format(course, units, professor, schedule, room))
+            # prints the updated dictionary to show changes
             print()
-        elif courseedit == 2:
+            user = input("Type 'EDIT' to continue editing\n"
+                         "Type 'VIEW' to redirect to the viewing selection\n"
+                         "Type 'EXIT' to terminate the program\n"
+                         "What would you like to do?\n").upper()
+            course_manager(user)
+        elif courseedit == "2":
             newunit = str(input("please input the new amount of units for this course.\n"))
             college_course[subjedit][1] = newunit
             print('Successfully edited course. The following is the updated course details')
@@ -131,8 +138,14 @@ def edit_course(college_course):
             for key, value in college_course.items():
                 course, units, professor, schedule, room = value
                 print("{:10}{:10}{:15}{:35}{:15}".format(course, units, professor, schedule, room))
+            # prints the updated dictionary to show changes
             print()
-        elif courseedit == 3:
+            user = input("Type 'EDIT' to continue editing\n"
+                         "Type 'VIEW' to redirect to the viewing selection\n"
+                         "Type 'EXIT' to terminate the program\n"
+                         "What would you like to do?\n").upper()
+            course_manager(user)
+        elif courseedit == '3':
             newins = str(input("please input the name of the new instructor.\n"))
             college_course[subjedit][2] = newins
             print('Successfully edited course. The following is the updated course details')
@@ -140,8 +153,14 @@ def edit_course(college_course):
             for key, value in college_course.items():
                 course, units, professor, schedule, room = value
                 print("{:10}{:10}{:15}{:35}{:15}".format(course, units, professor, schedule, room))
+            # prints the updated dictionary to show changes
             print()
-        elif courseedit == 4:
+            user = input("Type 'EDIT' to continue editing\n"
+                         "Type 'VIEW' to redirect to the viewing selection\n"
+                         "Type 'EXIT' to terminate the program\n"
+                         "What would you like to do?\n").upper()
+            course_manager(user)
+        elif courseedit == '4':
             newschedule = str(input("please input the new schedule.\n"
                                     "please follow this format '9:30AM - 11:30AM, Mon and Thu'"))
             college_course[subjedit][3] = newschedule
@@ -150,8 +169,14 @@ def edit_course(college_course):
             for key, value in college_course.items():
                 course, units, professor, schedule, room = value
                 print("{:10}{:10}{:15}{:35}{:15}".format(course, units, professor, schedule, room))
+            # prints the updated dictionary to show changes
             print()
-        elif courseedit == 5:
+            user = input("Type 'EDIT' to continue editing\n"
+                         "Type 'VIEW' to redirect to the viewing selection\n"
+                         "Type 'EXIT' to terminate the program\n"
+                         "What would you like to do?\n").upper()
+            course_manager(user)
+        elif courseedit == '5':
             newrm = str(input('please input the new room number for this course.\n'))
             college_course[subjedit][4] = newrm
             print('Successfully edited course. The following is the updated course details')
@@ -159,12 +184,20 @@ def edit_course(college_course):
             for key, value in college_course.items():
                 course, units, professor, schedule, room = value
                 print("{:10}{:10}{:15}{:35}{:15}".format(course, units, professor, schedule, room))
+            # prints the updated dictionary to show changes
             print()
+            user = input("Type 'EDIT' to continue editing\n"
+                         "Type 'VIEW' to redirect to the viewing selection\n"
+                         "Type 'EXIT' to terminate the program\n"
+                         "What would you like to do?\n").upper()
+            course_manager(user)
         else:
-            print('Invalid input. Please try again.\n')
+            print("Invalid input. Please read the selection carefully and try again.\n"
+                  "Type 'EXIT' to go back to the main selection")
+            edit_course(college_course)
     elif subjedit == "ADD":
         dict_length = len(college_course)
-        print("This course currently have", dict_length, "courses(subjects)")
+        print("This course currently has", dict_length, "courses(subjects)")
         newkey = input("Course code: ").upper()
         newunit = input("Number of units(Follow this format '3.0'): ")
         newins = input("Professor/Instructor(Capitalize the first letter!): ")
@@ -182,7 +215,14 @@ def edit_course(college_course):
         for key, value in college_course.items():
             course, units, professor, schedule, room = value
             print("{:10}{:10}{:15}{:35}{:15}".format(course, units, professor, schedule, room))
+        # prints the updated dictionary to show changes
         print()
+        user = input("Type 'EDIT' to continue editing\n"
+                     "Type 'VIEW' to redirect to the viewing selection\n"
+                     "Type 'EXIT' to terminate the program\n"
+                     "What would you like to do?\n").upper()
+        course_manager(user)
+
     elif subjedit == "REMOVE":
         print("The following are the current course codes of Computer Engineering")
         for i in college_course.keys():
@@ -193,14 +233,30 @@ def edit_course(college_course):
         for key, value in college_course.items():
             course, units, professor, schedule, room = value
             print("{:10}{:10}{:15}{:35}{:15}".format(course, units, professor, schedule, room))
+        # prints the updated dictionary to show changes
         print()
+        user = input("Type 'EDIT' to continue editing\n"
+                     "Type 'VIEW' to redirect to the viewing selection\n"
+                     "Type 'EXIT' to terminate the program\n"
+                     "What would you like to do?\n").upper()
+        course_manager(user)
+    elif subjedit == "EXIT":
+        course_manager(input("Good day esteemed student of Don Bosco Technical College!\n"
+                             "Welcome to DBTC course manager!\n"
+                             "\tType 'VIEW' to view course details\n"
+                             "\tType 'EDIT' to edit course details\n"
+                             "\tType 'EXIT' to terminate the program\n"
+                             "What would you like to do?\n").upper())
     else:
-        print('Invalid subject code. Please try again.\n')
+        print("Invalid input. Please read the selection carefully and try again.\n"
+              "Type 'EXIT' to go back to the main selection")
+        edit_course(college_course)
 
 def course_manager(user):
     while True:
         if user == "VIEW":
-            print("The available courses for the school year 2020-2021, 1st semester are the following:")
+            print("You are currently VIEWING\n"
+                  "The available courses for the school year 2020-2021, 1st semester are the following:")
             for i in dbtc_courses:
                 print('\t', i)
             view = input("What is your course?\n").upper()
@@ -211,6 +267,7 @@ def course_manager(user):
                              "Type 'EDIT' to redirect to the editing selection\n"
                              "Type 'EXIT' to terminate the program\n"
                              "What would you like to do?\n").upper()
+                course_manager(user)
             elif view == "ELECTRONICS AND COMMUNICATION ENGINEERING":
                 view_course(BSECE)
                 print()
@@ -254,67 +311,36 @@ def course_manager(user):
                              "Type 'EXIT' to terminate the program\n"
                              "What would you like to do?\n").upper()
             else:
-                user = input("Invalid input. Please check your spelling and spacing, then try again.\n"
+                user = input("Invalid input. You have been redirected to the main selection\n"
+                             "Please check your spelling and spacing, then try again.\n"
                              "Type 'VIEW' to view course details\n"
                              "Type 'EDIT' to edit course details\n"
                              "Type 'EXIT' to terminate the program\n"
                              "What would you like to do?\n").upper()
+
         elif user == "EDIT":
-            print("The available courses for the school year 2020-2021, 1st semester are the following:")
+            print("You are currently EDITING\n"
+                  "The available courses for the school year 2020-2021, 1st semester are the following:")
             for i in dbtc_courses:
                 print('\t', i)
             edit = input("Which course would you like to edit?\n").upper()
             if edit == "COMPUTER ENGINEERING":
                 edit_course(BSCpE)
-                print()
-                user = input("Type 'EDIT' to continue editing\n"
-                             "Type 'VIEW' to redirect to the viewing selection\n"
-                             "Type 'EXIT' to terminate the program\n"
-                             "What would you like to do?\n").upper()
             elif edit == "ELECTRONICS AND COMMUNICATION ENGINEERING":
                 edit_course(BSECE)
-                print()
-                user = input("Type 'EDIT' to continue editing\n"
-                             "Type 'VIEW' to redirect to the viewing selection\n"
-                             "Type 'EXIT' to terminate the program\n"
-                             "What would you like to do?\n").upper()
             elif edit == "MECHANICAL ENGINEERING":
                 edit_course(BSME)
-                print()
-                user = input("Type 'EDIT' to continue editing\n"
-                             "Type 'VIEW' to redirect to the viewing selection\n"
-                             "Type 'EXIT' to terminate the program\n"
-                             "What would you like to do?\n").upper()
             elif edit == "COMPUTER SCIENCE":
                 edit_course(BSCS)
-                print()
-                user = input("Type 'EDIT' to continue editing\n"
-                             "Type 'VIEW' to redirect to the viewing selection\n"
-                             "Type 'EXIT' to terminate the program\n"
-                             "What would you like to do?\n").upper()
             elif edit == "INFORMATION AND COMMUNICATION TECHNOLOGY":
                 edit_course(BSICT)
-                print()
-                user = input("Type 'EDIT' to continue editing\n"
-                             "Type 'VIEW' to redirect to the viewing selection\n"
-                             "Type 'EXIT' to terminate the program\n"
-                             "What would you like to do?\n").upper()
             elif edit == "ENTREPRENEUR":
                 edit_course(BSEntrep)
-                print()
-                user = input("Type 'EDIT' to continue editing\n"
-                             "Type 'VIEW' to redirect to the viewing selection\n"
-                             "Type 'EXIT' to terminate the program\n"
-                             "What would you like to do?\n").upper()
             elif edit == "ARCHITECTURE":
                 edit_course(BSArchi)
-                print()
-                user = input("Type 'EDIT' to continue editing\n"
-                             "Type 'VIEW' to redirect to the viewing selection\n"
-                             "Type 'EXIT' to terminate the program\n"
-                             "What would you like to do?\n").upper()
             else:
-                user = input("Invalid input. Please check your spelling and spacing, then try again.\n"
+                user = input("Invalid input. You have been redirected to the main selection\n"
+                             "Please check your spelling and spacing, then try again.\n"
                              "Type 'VIEW' to view course details\n"
                              "Type 'EDIT' to edit course details\n"
                              "Type 'EXIT' to terminate the program\n"
