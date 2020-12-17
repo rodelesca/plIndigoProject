@@ -1,7 +1,7 @@
 # plIndigoProject
 
 ## DBTC Course Manager:
-This program is designed to let the user view and edit DBTC's courses' details to hopefully contribute to the organization and manageability of the DBTC courses. 
+This program is designed to let the user view and edit DBTC's courses' details to hopefully contribute to the organization and manageability of said courses. 
 
 ## Features
 The program's features include:
