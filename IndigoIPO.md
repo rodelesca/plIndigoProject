@@ -11,9 +11,9 @@
 | - input new room                                                                    | - append new course unit to list | - display specific course edit selection         |
 | - input subject code to be removed                                                  | - append new professor to list   | - display exit to main selection                 |
 | - input var subjedit(subject codes of course dictionary to edit specific details)   | - append new schedule to list    | - displays course details                        |
-| - input update subject code                                                         | - append new room to list        | -                                                |
-| - input update course' no. units                                                    | - assign list as value of new key| -                                                |
-| - input update professor                                                            | - read updated course details    | -                                                |
-| - input update schedule                                                             | - assign items with update inputs| -                                                |
-| - input update room                                                                 | -                                | -                                                |
-| -                                                                                   | -                                | -                                                |
+| - input update subject code                                                         | - append new room to list        |                                                  |
+| - input update course' no. units                                                    | - assign list as value of new key|                                                  |
+| - input update professor                                                            | - read updated course details    |                                                  |
+| - input update schedule                                                             | - assign items with update inputs|                                                  |
+| - input update room                                                                 |                                  |                                                  |
+|                                                                                     |                                  |                                                  |
