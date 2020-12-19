@@ -19,3 +19,6 @@ The program's features include:
 * Jan Rodel Escareses (Team Lead),
 * Angelo Lloyd Gonzales (Rapporteur),
 * Donn Enrico Abejero
+
+## Video Link:
+https://youtu.be/WHjVLP6SDbM - automatic!
