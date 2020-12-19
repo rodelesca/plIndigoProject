@@ -21,4 +21,4 @@ The program's features include:
 * Donn Enrico Abejero
 
 ## Video Link:
-https://youtu.be/WHjVLP6SDbM - automatic!
+[Demonstration](https://youtu.be/WHjVLP6SDbM)
