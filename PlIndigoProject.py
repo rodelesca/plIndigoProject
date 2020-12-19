@@ -98,6 +98,12 @@ def view_course(program): # execute when the user wants to view the course detai
         course, units, professor, schedule, room = value
         print("{:10}{:10}{:15}{:35}{:15}".format(course, units, professor, schedule, room))
         # prints the course information from dictionary BSCpE.
+    print()
+    user = input("Type 'VIEW' to continue viewing\n"
+                 "Type 'EDIT' to redirect to the editing selection\n"
+                 "Type 'EXIT' to terminate the program\n"
+                 "What would you like to do?\n").upper()
+    course_manager(user)
 
 def edit_course(college_course): # execute when the user wants to edit the course details
     print("Type 'ADD' to add a course(subject)\n"
@@ -262,54 +268,25 @@ def course_manager(user):
             view = input("What is your course?\n").upper()
             if view == "COMPUTER ENGINEERING":
                 view_course(BSCpE)
-                print()
-                user = input("Type 'VIEW' to continue viewing\n"
-                             "Type 'EDIT' to redirect to the editing selection\n"
-                             "Type 'EXIT' to terminate the program\n"
-                             "What would you like to do?\n").upper()
-                course_manager(user)
+                break
             elif view == "ELECTRONICS AND COMMUNICATION ENGINEERING":
                 view_course(BSECE)
-                print()
-                user = input("Type 'VIEW' to continue viewing\n"
-                             "Type 'EDIT' to redirect to the editing selection\n"
-                             "Type 'EXIT' to terminate the program\n"
-                             "What would you like to do?\n").upper()
+                break
             elif view == "MECHANICAL ENGINEERING":
                 view_course(BSME)
-                print()
-                user = input("Type 'VIEW' to continue viewing\n"
-                             "Type 'EDIT' to redirect to the editing selection\n"
-                             "Type 'EXIT' to terminate the program\n"
-                             "What would you like to do?\n").upper()
+                break
             elif view == "COMPUTER SCIENCE":
                 view_course(BSCS)
-                print()
-                user = input("Type 'VIEW' to continue viewing\n"
-                             "Type 'EDIT' to redirect to the editing selection\n"
-                             "Type 'EXIT' to terminate the program\n"
-                             "What would you like to do?\n").upper()
+                break
             elif view == "INFORMATION AND COMMUNICATION TECHNOLOGY":
                 view_course(BSICT)
-                print()
-                user = input("Type 'VIEW' to continue viewing\n"
-                             "Type 'EDIT' to redirect to the editing selection\n"
-                             "Type 'EXIT' to terminate the program\n"
-                             "What would you like to do?\n").upper()
+                break
             elif view == "ENTREPRENEUR":
                 view_course(BSEntrep)
-                print()
-                user = input("Type 'VIEW' to continue viewing\n"
-                             "Type 'EDIT' to redirect to the editing selection\n"
-                             "Type 'EXIT' to terminate the program\n"
-                             "What would you like to do?\n").upper()
+                break
             elif view == "ARCHITECTURE":
                 view_course(BSArchi)
-                print()
-                user = input("Type 'VIEW' to continue viewing\n"
-                             "Type 'EDIT' to redirect to the editing selection\n"
-                             "Type 'EXIT' to terminate the program\n"
-                             "What would you like to do?\n").upper()
+                break
             else:
                 user = input("Invalid input. You have been redirected to the main selection\n"
                              "Please check your spelling and spacing, then try again.\n"
@@ -326,18 +303,25 @@ def course_manager(user):
             edit = input("Which course would you like to edit?\n").upper()
             if edit == "COMPUTER ENGINEERING":
                 edit_course(BSCpE)
+                break
             elif edit == "ELECTRONICS AND COMMUNICATION ENGINEERING":
                 edit_course(BSECE)
+                break
             elif edit == "MECHANICAL ENGINEERING":
                 edit_course(BSME)
+                break
             elif edit == "COMPUTER SCIENCE":
                 edit_course(BSCS)
+                break
             elif edit == "INFORMATION AND COMMUNICATION TECHNOLOGY":
                 edit_course(BSICT)
+                break
             elif edit == "ENTREPRENEUR":
                 edit_course(BSEntrep)
+                break
             elif edit == "ARCHITECTURE":
                 edit_course(BSArchi)
+                break
             else:
                 user = input("Invalid input. You have been redirected to the main selection\n"
                              "Please check your spelling and spacing, then try again.\n"
@@ -347,7 +331,7 @@ def course_manager(user):
                              "What would you like to do?\n").upper()
         elif user == "EXIT":
             print("Thank you for using Don Bosco Technical College course manager!\n"
-                  "Have Merry Christmas and a Happy New Year!")
+                  "Have Merry Christmas and a Happy New Year!!")
             break
         else:
             user = input("Invalid input. Please check your spelling and spacing, then try again.\n"
@@ -362,3 +346,4 @@ course_manager(input("Good day esteemed student of Don Bosco Technical College!\
                      "\tType 'EDIT' to edit course details\n"
                      "\tType 'EXIT' to terminate the program\n"
                      "What would you like to do?\n").upper())
+
